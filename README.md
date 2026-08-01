@@ -1,16 +1,16 @@
 # Rare Vault
 
-**API** · **Go** · **v0.1.0**
+**Go** · **v0.1.0**
 
-_API status monitor with uptime tracking_
+_Word frequency counter that reads text from stdin and ranks words_
 
 ---
 
 ## Features
 
-- **Lightweight** — Minimal dependencies, no bloat
-- **Fast** — Optimized for speed and low resource usage
-- **CLI-first** — Designed for the terminal, works with pipes
+- Streams input from stdin
+- Counts total and unique words
+- Ranks top 15 words by frequency
 
 ## Installation
 
@@ -22,12 +22,8 @@ cd rare-vault
 ## Usage
 
 ```bash
-go run main.go --help
+cat file.txt | go run main.go
 ```
-
-## Development
-
-Contributions are welcome! Feel free to open issues or submit PRs.
 
 ## License
 
